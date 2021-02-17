@@ -1,0 +1,1256 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.clr::after
+{
+ content: "";
+ clear: both;
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+
+/***** NAVIGATION BAR *****/
+
+ul {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 11px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    color: white;
+    transition: all .4s ease;
+}
+
+a.index-active {
+    color: #FCEE21;
+}
+
+a.index-active:hover {
+    color: #fff;
+}
+
+ul li a:hover {
+    color: #FCEE21;
+}
+
+ul li img {
+    width: 100px;
+    margin: 0 40px -40px;
+}
+#intro section.right img.desc {
+    width: 80%;
+    margin: 100px auto 80px;
+}
+
+/***** SLIDESHOW *****/
+
+#best-seller {
+    background-color: #C9EFB9;
+}
+
+div.left-best, div.dots {
+    width: 40%;
+    float:left;
+    margin-right: 5%;
+}
+
+div.dots {
+    padding-top: 5px;
+}
+
+div.right-best {
+    width: 55%;
+    float: left;
+    text-align: center;
+}
+
+.slideshow-container {
+    width: 60%;
+    position: relative;
+    margin: auto;
+    padding: 30px 0 35px;
+    background: #C9EFB9;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 14px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: -60px;
+}
+
+.next {
+    right: -60px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color: white;
+}
+
+#best-seller h1 {
+    margin-top: 60px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#best-seller h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+/***** DIVS *****/
+
+header#header-index, #instagram, #instagram div.column, #events, #careers, body.about div.project div.left-img, #events div.column, #contact, body.about div.percy-left, body.location div.column, body.about div.project div.right-img, body.about div.vibes div.right-img, body.about div.heart, body.contact div.image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#location div.container, #about div.container {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header#header-index {
+    width: 100%;
+    height: 110vh;
+    background-image: url('../IMG/index/background.jpg');
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}
+
+#intro {
+    padding: 100px 13%;
+    text-align: center;
+    color: #7F0099;
+}
+
+#intro section.left {
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+}
+
+#intro section.right {
+    width: 50%;
+    float: left;
+    clear: right;
+}
+
+#intro div.intro-left h2 {
+    margin-top: 200px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    padding: 10px 0 10px 40px;
+}
+
+#intro div.intro-left {
+    background-position: left;
+    background-size: 29%;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/index/intro-left.png');
+}
+
+#intro div.intro-right h2 {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 25px;
+    padding: 10px 0 10px;
+}
+
+#intro div.intro-right {
+    background-position: right top;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/index/intro-right.png');
+}
+
+#location {
+    padding: 130px;
+    background-color: #F9E8F8;
+}
+
+#location div.container {
+    width: 100%;
+    height: 140vh;
+    background-color: #F9E8F8;
+    background-image: url('../IMG/index/background-location.png');
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}
+
+#instagram {
+    width: 100%;
+    background-color: #F9E8F8;
+    background-image: url('../IMG/index/background-instagram.jpg');
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}
+
+#instagram div.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#instagram div.column {
+    width: 32%;
+    float: left;
+    padding-top: 32%;
+    background-color: #F9E8F8;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+#instagram div.column:hover {
+    opacity: 0.8;
+}
+
+#instagram div.one {
+    background-image: url('../IMG/index/ig1.jpg');
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#instagram div.two {
+    background-image: url('../IMG/index/ig2.jpg');
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#instagram div.three {
+    background-image: url('../IMG/index/ig3.jpg');
+    margin-bottom: 2%;
+}
+
+#instagram div.four {
+    background-image: url('../IMG/index/ig4.jpg');
+    margin-right: 2%;
+}
+
+#instagram div.five {
+    background-image: url('../IMG/index/ig5.jpg');
+    margin-right: 2%;
+}
+
+#instagram div.six {
+    background-image: url('../IMG/index/ig6.jpg');
+    margin-bottom: 150px;
+}
+
+#about {
+    padding: 30vh 20vh;
+    background-color: #C9EFB9;
+    background-image: url('../IMG/index/background-about.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+#about div.container {
+    width: 80%;
+    margin: 0 10%;
+    background-color: #C9EFB9;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+#about div.left {
+    flex: 4;
+}
+
+#about div.right {
+    flex: 5;
+}
+
+#about div.left h2 {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 50px 0 50px;
+}
+
+#about div.right h2 {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#about img {
+    width: 100%;
+}
+
+#events {
+    width: 100%;
+    background-color: #F9E8F8;
+    background-image: url('../IMG/index/background-events.jpg');
+    background-size: cover;
+    text-align: left;
+    vertical-align: center;
+    position: relative;
+    padding: 20vh;
+}
+
+#events div.row {
+    display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+#events div.row:first-child {
+    margin-bottom: 20px;
+}
+
+#events .row .column {
+    flex: 1;
+    background: white;
+    transition: all .4s ease;
+}
+
+#events .row .column .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50%;
+}
+
+#events .row .one .image {background-image: url('../IMG/index/event1.png');}
+#events .row .two .image {background-image: url('../IMG/index/event2.png');}
+#events .row .three .image {background-image: url('../IMG/index/event3.png');}
+#events .row .four .image {background-image: url('../IMG/index/event4.png');}
+#events .row .five .image {background-image: url('../IMG/index/event5.png');}
+#events .row .six .image {background-image: url('../IMG/index/event6.png');}
+ 
+#events .row a {
+    text-decoration: none;
+}
+
+#events .row .column .content {
+    padding: 15px 20px;
+}
+
+#events .row .column .content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+#events .row .column .content h4 {
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #7F7F7F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#events .row .column .content h5 {
+    font-size: 10px;
+    font-style: italic;
+    color: #9B9B9B;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    line-height: 17px;
+}
+
+#events div.column:hover {
+    transform: scale(1.05);
+}
+
+#careers {
+    width: 100%;
+    height: 110vh;
+    background-color: #F9E8F8;
+    background-image: url('../IMG/index/background-careers.jpg');
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    padding-top: 120px;
+    color: white;
+}
+
+#contact {
+    width: 100%;
+    height: 400px;
+    background-color: #F9E8F8;
+    background-image: url('../IMG/index/background-contact.jpg');
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    color: white;
+}
+
+body.menu {
+    background: #C9EFB9;
+    text-align: center;
+}
+
+body.menu .container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.menu .row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.menu .row .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.menu .image h2 {
+    font-style: italic;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+
+.menu .one .image {background-image: url('../IMG/menu/menu1.jpg');}
+.menu .two .image {background-image: url('../IMG/menu/menu2.jpg');}
+.menu .three .image {background-image: url('../IMG/menu/menu3.jpg');}
+.menu .four .image {background-image: url('../IMG/menu/menu4.jpg');}
+.menu .five .image {background-image: url('../IMG/menu/menu5.jpg');}
+.menu .six .image {background-image: url('../IMG/menu/menu6.jpg');}
+.menu .seven .image {background-image: url('../IMG/menu/menu7.jpg');}
+.menu .eight .image {background-image: url('../IMG/menu/menu8.jpg');}
+
+.menu .content {
+    flex: 1;
+    background: #EDEDED;
+    text-align: left;
+    padding: 20px 20px 30px;
+}
+
+.menu .content h2 {
+    font-style: italic;
+    font-size: 35px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.menu h3 {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.menu .price {
+    font-size: 15px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.menu h4 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    color: #333333;
+}
+
+body.location {
+    background: #EBD9F9;
+    text-align: center;
+}
+
+body.location section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body.location div.column {
+    width: 49.5%;
+    float: left;
+    padding-top: 28%;
+    background-color: #F9E8F8;
+}
+
+body.location div.one {
+    background-image: url('../IMG/location/loc1.jpg');
+    margin-right: 1%;
+}
+
+body.location div.two {
+    background-image: url('../IMG/location/loc2.jpg');
+}
+
+body.location div.three {
+    background-image: url('../IMG/location/loc3.jpg');
+    margin-right: 1%;
+}
+
+body.location div.four {
+    background-image: url('../IMG/location/loc4.jpg');
+}
+
+body.about {
+    background: #F9EFC5;
+    text-align: center;
+}
+
+body.about div.container {
+    width: 900px;
+    margin: 0 auto 50px;
+}
+
+body.about div.percy-left {
+    width: 25%;
+    padding-top: 50%;
+    background-image: url('../IMG/about/statue.png');
+    float: left;
+}
+
+body.about div.percy-right {
+    width: 75%;
+    float: left;
+}
+
+body.about div.owner {
+    width: 1200px;
+    height: 430px;
+    margin: 0 auto 50px;
+    background-image: url('../IMG/about/jesse.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body.about div.owner div.desc {
+    width: 50%;
+    padding-top: 60px;
+}
+
+body.about div.filipino {
+    width: 1200px;
+    margin: 100px auto 50px;
+    background-image: url('../IMG/about/quotes.png');
+    background-position: top;
+    background-size: 860px;
+    background-repeat: no-repeat;
+}
+
+body.about div.project-container {
+    background-image: url('../IMG/about/background-project.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+body.about div.project {
+    width: 1150px;
+    margin: 0 auto 50px;
+}
+
+body.about div.project div.left-img {
+    width: 38%;
+    padding-top: 46%;
+    background-image: url('../IMG/about/project1.jpg');
+    float: left;
+    margin-bottom: 70px;
+}
+
+body.about div.project div.right-desc {
+    width: 62%;
+    float: left;
+}
+
+
+body.about div.project div.right-img {
+    width: 50%;
+    padding-top: 56%;
+    background-image: url('../IMG/about/project2.jpg');
+    float: left;
+}
+
+body.about div.project div.left-desc {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+body.about div.heart {
+    width: 100%;
+    padding-top: 54%;
+    background-image: url('../IMG/about/background-message.png');
+    margin: 100px 0 120px;
+}
+
+body.about div.vibes {
+    width: 1200px;
+    margin: 0 auto 50px;
+}
+
+body.about div.vibes div.left-img {
+    width: 54%;
+    padding-top: 39%;
+    background-image: url('../IMG/about/vibes1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 70px;
+}
+
+body.about div.vibes div.right-desc {
+    width: 41%;
+    float: left;
+    margin-left: 5%
+}
+
+body.about div.vibes div.right-img {
+    width: 54%;
+    padding-top: 39%;
+    background-image: url('../IMG/about/vibes2.jpg');
+    float: left;
+}
+
+body.about div.vibes div.left-desc {
+    width: 46%;
+    float: left;
+}
+
+body.careers {
+    background: #E6E6FC;
+    text-align: center;
+}
+
+body.contact {
+    background: #D6E5DD;
+    text-align: center;
+}
+
+body.contact div.image {
+    width: 40%;
+    padding-top: 550px;
+    float: left;
+    background-image: url('../IMG/contact/form.jpg');
+}
+
+/***** TEXTS *****/
+
+header#header-index h1 {
+    padding-top: 25vh;
+    font-style: italic;
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#intro h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#intro h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+#location h1 {
+    padding-top: 275px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 53px;
+}
+
+#instagram h1 {
+    padding: 70px;
+    font-size: 41px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#events h1 {
+    font-size: 147px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    color: #D0D0D0;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+#careers h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-bottom: 70px;
+}
+
+#careers p {
+    font-size: 29px;
+    letter-spacing: 1px;
+    padding-bottom: 90px;
+}
+
+#contact h1 {
+    padding-top: 80px;
+    font-weight: 500;
+    font-size: 68px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #333333;
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+
+body.menu section h1 {
+    padding: 140px 0 80px;
+    font-style: italic;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+body.location section h1 {
+    padding: 140px 0 80px;
+    font-style: italic;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+body.location section h2.question {
+    margin-top: 80px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+body.location section span {
+    color: #9414AF;
+    font-weight: 500;
+}
+
+body.about section h1, body.careers h1, body.contact h1 {
+    padding: 140px 0 60px;
+    font-style: italic;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+body.about div.percy-right p {
+    padding-top: 100px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27px;
+    color: #333;
+}
+
+body.about span {
+    font-weight: 500;
+    color: #847225;
+}
+
+body.about div.owner div.desc p, body.about div.filipino p, body.about div.project div.right-desc p, body.about div.project div.left-desc p, body.about div.vibes div.right-desc p, body.about div.vibes div.left-desc p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    color: #333;
+}
+
+body.about div.filipino p {
+    padding-top: 60px;
+}
+
+body.about div.project div.right-desc p {
+    padding-top: 120px;
+    line-height: 35px;
+}
+
+body.about div.project div.left-desc p {
+    padding-top: 70px;
+    line-height: 35px;
+}
+
+body.about div.vibes div.right-desc p {
+    padding-top: 50px;
+    line-height: 35px;
+}
+
+body.about div.vibes div.left-desc p {
+    padding-top: 40px;
+    line-height: 35px;
+}
+
+body.careers h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    color: #4F4F8E;
+}
+
+/***** IMAGES *****/
+
+#intro img.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+#intro section.left img.desc {
+    width: 97%;
+    margin: 170px auto 40px;
+}
+
+#intro section img {
+    width: 100%;
+}
+
+#careers img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+body.menu section div img {
+    width: 100%;
+}
+
+body.location section div img {
+    width: 100%;
+}
+
+body.location .desc1 {
+    width: 45%;
+    margin: 40px auto;
+    padding: 60px 0 0;
+    box-sizing: content-box;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/location/desc1.png');
+}
+
+body.location .desc2 {
+    width: 55%;
+    margin: 40px auto 70px;
+    padding: 50px 40px 0px 0px;
+    box-sizing: content-box;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/location/desc2.png');
+}
+
+body.location .desc1 h2, body.location .desc2 h2{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+body.location section img.direction {
+    width: 750px;
+    margin-top: 70px;
+}
+
+body.location .directions {
+    margin: 20px auto 0;
+    width: 750px;
+    display: flex;
+}
+
+body.location .image {
+    flex: 1;
+}
+
+body.location .text {
+    flex: 6;
+}
+
+body.location .text h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+body.location .image img {
+    width: 100%;
+}
+
+body.about div.vibes img.vibes {
+    width: 280px;
+    margin-top: -140px;
+    margin-bottom: -100px;
+}
+
+body.careers .container {
+    width: 900px;
+    margin: 80px auto 0;
+}
+
+.careers .row {
+    display: flex;
+}
+
+.careers .row .content {
+    padding: 80px 60px;
+    flex: 1;
+    text-align: left;
+}
+
+.careers .row .content:nth-child(even) {
+    background: #F49F80;
+}
+
+.careers .row .content:nth-child(odd) {
+    background: #403A6D;
+}
+
+.careers .row h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #403A6D;
+}
+
+.careers .row h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #403A6D;
+    margin-top: 30px;
+}
+
+.careers .row .content:nth-child(even) h4, .careers .row .content:nth-child(even) h3 {
+    color: #403A6D;
+}
+
+.careers .row .content:nth-child(odd) h4, .careers .row .content:nth-child(odd) h3 {
+    color: #F49F80;
+}
+
+.careers .row .image {
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    position: relative;
+    padding: 60px;
+}
+
+.careers .row img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.careers .one .image {background-image: url('../IMG/careers/career1.jpg');}
+.careers .two .image {background-image: url('../IMG/careers/career2.jpg');}
+.careers .three .image {background-image: url('../IMG/careers/career3.jpg');}
+.careers .four .image {background-image: url('../IMG/careers/career4.jpg');}
+
+/***** BUTTONS *****/
+
+#intro a div, #location a div, #about a div, #careers a div, #contact a div {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .4s ease;
+}
+
+#intro a {
+    text-decoration: none;
+}
+
+#intro a div {
+    border: 1.5px solid #7F0099;
+    padding: 15px 25px;
+    color: #7F0099;
+}
+
+#intro a div:hover {
+    background: #7F0099;
+    color: #fff;
+}
+
+#location a {
+    text-decoration: none;
+}
+
+#location a div {
+    border: 2px solid white;
+    padding: 15px 25px;
+    color: white;
+}
+
+#location a div:hover {
+    background: #fff;
+    color: #333;
+}
+
+#about a {
+    float: right;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+#about a div {
+    border: 2px solid #333333;
+    padding: 15px 45px;
+    color: #333333;
+}
+
+#about a div:hover {
+    background: #333;
+    color: #C9EFB9;
+}
+
+#careers a {
+    text-decoration: none;
+    color: white;
+}
+
+#careers a div {
+    border: 2px solid white;
+    padding: 15px 35px;
+}
+
+#careers a div:hover {
+    background: #fff;
+    color: #333;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#contact a div {
+    border: 2px solid #333333;
+    padding: 15px 35px;
+}
+
+#contact a div:hover {
+    background: #333;
+    color: #fff;
+}
+
+body.menu ul li a, body.location ul li a, body.about ul li a, body.careers ul li a, body.contact ul li a {
+    color: #1A1A1A;
+}
+
+body.menu ul li a:hover, a#active-menu {
+    color: #40C900;
+}
+
+a#active-menu:hover, a#active-location:hover, a#active-about:hover, a#active-careers:hover, a#active-contact:hover {
+    color: #333;
+}
+
+body.location ul li a:hover, a#active-location {
+    color: #9500C6;
+}
+
+body.about ul li a:hover, a#active-about {
+    color: #BC990A;
+}
+
+body.careers ul li a:hover, a#active-careers {
+    color: #4F4F8E;
+}
+
+body.contact ul li a:hover, a#active-contact {
+    color: #008435;
+}
+
+/***** FOOTER *****/
+
+footer {
+    height: 80px;
+    background-color: #E0E0E0;
+    text-align: center;
+}
+
+body.menu section p, p.footer, body.location section p, body.careers p, body.contact p.footer {
+    padding: 60px 0;
+    color: #1A1A1A;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    padding-top: 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/***** FORM *****/
+
+body.contact div.form {
+    width: 950px;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+fieldset { 
+    border: none; 
+    text-align: left;
+}
+
+body.contact form {
+    width: 60%;
+    float: left;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 70px;
+}
+
+body.contact legend {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+body.contact form p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+    color: #738C7D;
+    margin-bottom: 4px;
+}
+
+body.contact input[type=text], body.contact input[type=email], textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 1px solid #757574;
+}
+
+::placeholder { 
+  color: #BBBCBB;
+  opacity: 1;
+}
+
+div.submit {
+    text-align: right;
+}
+
+div.submit input {
+    padding: 5px 40px;
+    background: #738C7D;
+	color: white;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+}
